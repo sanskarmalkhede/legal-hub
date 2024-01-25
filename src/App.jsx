@@ -4,6 +4,7 @@ import SignIn from "./Auth/SignIn";
 import SignUp from "./Auth/SignUp";
 import ForgotPassword from "./Auth/ForgotPassword";
 import Home from "./Screens/Home";
+import News from "./Screens/News";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/news" element={<News />} />
         </Routes>
       </div>
     </BrowserRouter>
