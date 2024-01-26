@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./firebase";
+import Navbar from "../Components/Navbar";
 
 function SignUp() {
   const [email, setEmail] = useState("");
@@ -18,26 +19,29 @@ function SignUp() {
       });
   };
   return (
-    <div className="signin-container">
-      <h2>Create Account</h2>
-      <form onSubmit={SignUp}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
+    <>
+      <Navbar />
+      <div className="signin-container">
+        <h2>Create Account</h2>
+        <form onSubmit={SignUp}>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </>
   );
 }
 

@@ -5,6 +5,7 @@ import SignUp from "./Auth/SignUp";
 import ForgotPassword from "./Auth/ForgotPassword";
 import Home from "./Screens/Home";
 import News from "./Screens/News";
+import Faqs from "./Screens/FAQs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/news" element={<News />} />
+          <Route path="/faqs" element={<Faqs />} />
         </Routes>
       </div>
     </BrowserRouter>
