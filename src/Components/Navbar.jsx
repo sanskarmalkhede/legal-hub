@@ -13,13 +13,10 @@ const Navbar = () => {
         {/* Logo in the center */}
         <div className="flex items-center">
           <img
-            src="https://png.pngtree.com/png-clipart/20191121/original/pngtree-scales-of-justice-icon-simple-style-png-image_5161552.jpg"
+            src="src\assets\logo.png"
             alt="Logo"
-            className="h-8 mr-2"
+            className="h-6 mr-2"
           />
-          <span className="text-white text-lg font-semibold">
-            आपला न्यायालय
-          </span>
         </div>
 
         {/* Navbar List */}
@@ -59,7 +56,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="fir"
+              href="/fir"
               className={`text-white ${
                 activeTab === "file" ? "underline" : ""
               }`}

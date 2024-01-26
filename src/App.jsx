@@ -6,6 +6,8 @@ import ForgotPassword from "./Auth/ForgotPassword";
 import Home from "./Screens/Home";
 import News from "./Screens/News";
 import Faqs from "./Screens/FAQs";
+import FIR from "./Screens/FIR";
+import LaborLawCard from "./Components/LaborLawCard";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/news" element={<News />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/fir" element={<FIR />} />
+          <Route path="/labor-laws" element={<LaborLawCard />} />
         </Routes>
       </div>
     </BrowserRouter>

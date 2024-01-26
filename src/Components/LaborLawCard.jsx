@@ -6,7 +6,7 @@ const Law = [
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQ_PpdNMcnaeDzrydOK9R0RsC3BlaaFlj8A&usqp=CAU',
         heading: 'Labour Laws',
         details: 'Labour laws (also spelled as labor laws), labour code or employment laws are those that mediate the relationship between workers, employing entities, trade unions, and the government. Collective labour law relates to the tripartite relationship between employee, employer, and union.',
-        redirectPath: '/labor-laws',
+        redirectPath: '/forgot-password'
     },
     {
         id: 2,
@@ -46,7 +46,7 @@ const Law = [
 //     history.push(redirectPath);
 //   };
 // };
-function LawCard() {
+function LaborLawCard() {
     return (
         <div className='container flex gap-6 m-1'>
             {Law.map((item) => (
@@ -62,4 +62,4 @@ function LawCard() {
     );
 };
 
-export default LawCard;
+export default LaborLawCard;
