@@ -1,5 +1,3 @@
-// Navbar.js
-
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -19,14 +17,16 @@ const Navbar = () => {
             alt="Logo"
             className="h-8 mr-2"
           />
-          <span className="text-white text-lg font-semibold">Nyayla</span>
+          <span className="text-white text-lg font-semibold">
+            आपला न्यायालय
+          </span>
         </div>
 
         {/* Navbar List */}
         <ul className="flex space-x-4">
           <li>
             <a
-              href="#"
+              href="/"
               className={`text-white ${
                 activeTab === "home" ? "underline" : ""
               }`}
@@ -37,7 +37,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="/news"
               className={`text-white ${
                 activeTab === "news" ? "underline" : ""
               }`}
@@ -48,7 +48,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="/faqs"
               className={`text-white ${
                 activeTab === "faqs" ? "underline" : ""
               }`}
@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="fir"
               className={`text-white ${
                 activeTab === "file" ? "underline" : ""
               }`}
@@ -72,10 +72,10 @@ const Navbar = () => {
 
         {/* Sign In and Sign Up Buttons */}
         <div className="flex items-center space-x-4">
-          <a href="#" className="text-white">
+          <a href="/sign-in" className="text-white">
             Sign In
           </a>
-          <a href="#" className="bg-white text-blue-500 px-4 py-2 rounded-full">
+          <a href="/sign-up" className="bg-white text-blue-500 px-4 py-2 rounded-full">
             Sign Up
           </a>
         </div>
